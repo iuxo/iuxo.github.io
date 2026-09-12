@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "iuxo"
+  title: "Jared Chuang"
   navbar:
     left:
       - href: index.qmd
