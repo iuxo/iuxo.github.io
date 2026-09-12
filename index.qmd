@@ -1,7 +1,10 @@
 ---
-title: "iuxo"
+title: "Jared Chuang"
+about:
+  template: trestles
+  image: images/IMG_3052.jpg
 ---
 
-This is a Quarto website.
+Hi, my name is Jared Chuang. I've been living in Vancouver my whole life, after graduating with a BSc in Mathematics and a diploma in Data Science. I have been working as a Machine Learning Engineer for 2 years. I am hoping to improve upon my skills to hopefully become a Data Engineer.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Outside of professional career, some of my hobbies include hiking, playing video games, and playing pickleball. 
