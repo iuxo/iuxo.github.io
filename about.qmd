@@ -4,7 +4,9 @@ title: "About"
 
 ## Background
 Hi again, my name is Jared Chuang. I grew up in Vancouver, Canada and was lucky enough to go to UBC for my undergrad. After obtaining my BSc in Mathematics, I was unsure about what to do next, I really wanted to work in Tech, so I obtained a Diploma in Data Science which helped me land my first job working as a Machine Learning Engineer at VisionBox, a small startup in Burnaby. I am now hoping to obtain my Masters of Data Science from UBC!
+
 ## Why Data Science
+
 After being out of school for so long, I really didn't want to go back to school for 2 years, but I wanted to get a formal education in Data Science. UBC's MDS program is an accelerated, fast-paced program which you can complete in 10 months, this really drew me towards this program. 
 ## Outside of Data 
 As I’ve gotten older and had the chance to travel to different cities, I’ve come to appreciate just how lucky I am to have grown up in Vancouver. Having mountains, lakes, and nature so close by has made me want to spend more of my free time outdoors. These days, you’ll often find me hiking, snowboarding, or paddleboarding, depending on the season.
