@@ -2,3 +2,9 @@
 **/*.quarto_ipynb
 
 snowflake.log
+
+/.venv/
+
+.RData
+.Rhistory
+.Rprofile
