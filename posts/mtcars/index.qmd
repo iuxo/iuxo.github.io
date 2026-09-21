@@ -1,0 +1,22 @@
+---
+title: "mtcars analysis"
+author: "Jared Chuang"
+date: 2026-09-21
+---
+``` {r}
+#| label: fig-mtcars-dist
+#| fig-cap: "Distribution of Fuel Efficiency of Cars"
+library(ggplot2)
+
+ggplot(mtcars, aes(x = mpg)) +
+  geom_histogram(binwidth = 2, fill = "steelblue", color = "white") +
+  labs(
+    title = "Distribution of Car Fuel Efficiency",
+    x = "Miles per gallon (mpg)",
+    y = "Number of cars"
+  ) +
+  theme_minimal()
+```
+Data: [mtcars dataset](https://www.rdocumentation.org/packages/datasets/versions/3.6.2/topics/mtcars), GPL
+
+Separated the data into buckets of 2 mpg to see the distribution of data. From the distribution, the highest number of cars (5) were in the bins [15, 17], [19, 21], and [21, 23]

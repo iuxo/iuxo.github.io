@@ -4,42 +4,7 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "My first weeks in MDS\n\n\n\n\n\n\n\n\nSep 11, 2026\n\n\nJared Chuang\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Hi again, my name is Jared Chuang. I grew up in Vancouver, Canada and was lucky enough to go to UBC for my undergrad. After obtaining my BSc in Mathematics, I was unsure about what to do next, I really wanted to work in Tech, so I obtained a Diploma in Data Science which helped me land my first job working as a Machine Learning Engineer at VisionBox, a small startup in Burnaby. I am now hoping to obtain my Masters of Data Science from UBC!"
-  },
-  {
-    "objectID": "about.html#background",
-    "href": "about.html#background",
-    "title": "About",
-    "section": "",
-    "text": "Hi again, my name is Jared Chuang. I grew up in Vancouver, Canada and was lucky enough to go to UBC for my undergrad. After obtaining my BSc in Mathematics, I was unsure about what to do next, I really wanted to work in Tech, so I obtained a Diploma in Data Science which helped me land my first job working as a Machine Learning Engineer at VisionBox, a small startup in Burnaby. I am now hoping to obtain my Masters of Data Science from UBC!"
-  },
-  {
-    "objectID": "about.html#why-data-science",
-    "href": "about.html#why-data-science",
-    "title": "About",
-    "section": "Why Data Science",
-    "text": "Why Data Science\nAfter being out of school for so long, I really didn’t want to go back to school for 2 years, but I wanted to get a formal education in Data Science. UBC’s MDS program is an accelerated, fast-paced program which you can complete in 10 months, this really drew me towards this program."
-  },
-  {
-    "objectID": "about.html#outside-of-data",
-    "href": "about.html#outside-of-data",
-    "title": "About",
-    "section": "Outside of Data",
-    "text": "Outside of Data\nAs I’ve gotten older and had the chance to travel to different cities, I’ve come to appreciate just how lucky I am to have grown up in Vancouver. Having mountains, lakes, and nature so close by has made me want to spend more of my free time outdoors. These days, you’ll often find me hiking, snowboarding, or paddleboarding, depending on the season.\nOne of the biggest additions to my life has been pickleball. I started playing in 2025, and what began as a casual hobby quickly became something I genuinely look forward to. I enjoy the competitive side of the sport, but I also love the social aspect and the people I’ve met through it.\nWhen I’m not outside or on the pickleball court, I’ve always had video games as another way to spend my time. I regularly play competitive games like League of Legends and Counter-Strike 2, although I enjoy single-player games as well. I’ve always been drawn to competitive games because I enjoy the challenge of improving, learning from mistakes, and pushing myself to get better."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Jared Chuang",
-    "section": "",
-    "text": "Hi, my name is Jared Chuang. I’ve been living in Vancouver my whole life, after graduating with a BSc in Mathematics and a diploma in Data Science. I have been working as a Machine Learning Engineer for 2 years. I am hoping to improve upon my skills to hopefully become a Data Engineer.\nOutside of professional career, some of my hobbies include hiking, playing video games, and playing pickleball."
+    "text": "kddcup99 analysis\n\n\n\n\n\n\n\n\nSep 21, 2026\n\n\nJared Chuang\n\n\n\n\n\n\n\n\n\n\n\n\nmtcars analysis\n\n\n\n\n\n\n\n\nSep 21, 2026\n\n\nJared Chuang\n\n\n\n\n\n\n\n\n\n\n\n\nMy first weeks in MDS\n\n\n\n\n\n\n\n\nSep 11, 2026\n\n\nJared Chuang\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/first-weeks/index.html",
@@ -47,5 +12,12 @@
     "title": "My first weeks in MDS",
     "section": "",
     "text": "Orientation day on campus.\n\n\nWhat I thought would be a nightmare to adjust to is going surprisingly well. I have met a lot of new people and even made some new friends. Balancing schoolwork, studying, and my social life has not been too bad. I am able to take notes, listen to all the lectures, and complete labs usually on the same day, allowing me to spend the rest of my day reading ahead or going out to do other things I enjoy. Hopefully, I can keep it that way.\nAfter entering the workforce and going back to school, it feels kind of refreshing to be in a cohort of peers who are all going through the same things together. We’re all going to experience ups and downs together throughout these 10 months.\nWhat I am worried about is whether I will still be able to keep up this routine once the course material gets harder."
+  },
+  {
+    "objectID": "posts/mtcars/index.html",
+    "href": "posts/mtcars/index.html",
+    "title": "mtcars analysis",
+    "section": "",
+    "text": "library(ggplot2)\n\nggplot(mtcars, aes(x = mpg)) +\n  geom_histogram(binwidth = 2, fill = \"steelblue\", color = \"white\") +\n  labs(\n    title = \"Distribution of Car Fuel Efficiency\",\n    x = \"Miles per gallon (mpg)\",\n    y = \"Number of cars\"\n  ) +\n  theme_minimal()\n\n\n\n\n\n\n\nFigure 1: Distribution of Fuel Efficiency of Cars\n\n\n\n\n\nData: mtcars dataset, GPL\nSeparated the data into buckets of 2 mpg to see the distribution of data. From the distribution, the highest number of cars (5) were in the bins [15, 17], [19, 21], and [21, 23]"
   }
 ]

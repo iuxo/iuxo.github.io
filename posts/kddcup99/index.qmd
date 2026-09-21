@@ -1,0 +1,5 @@
+---
+title: "kddcup99 analysis"
+author: "Jared Chuang"
+date: 2026-09-21
+---
