@@ -3,8 +3,17 @@ title: "mtcars analysis"
 author: "Jared Chuang"
 date: 2026-09-21
 ---
+# MTCars EDA
+
+Data: [mtcars dataset](https://www.rdocumentation.org/packages/datasets/versions/3.6.2/topics/mtcars), GPL License.
+
+A good idea when starting out with datasets is to get a good feel for the data, see what our data kind of looks like and what rows and columns are in the data.
+```{r}
+head(mtcars)
+```
+Next, I want to take a look at the data distribution.
 ``` {r}
-#| label: fig-mtcars-dist
+#| label: MTCars Distribution of Fuel Efficiency
 #| fig-cap: "Distribution of Fuel Efficiency of Cars"
 library(ggplot2)
 
@@ -17,6 +26,15 @@ ggplot(mtcars, aes(x = mpg)) +
   ) +
   theme_minimal()
 ```
-Data: [mtcars dataset](https://www.rdocumentation.org/packages/datasets/versions/3.6.2/topics/mtcars), GPL
 
-Separated the data into buckets of 2 mpg to see the distribution of data. From the distribution, the highest number of cars (5) were in the bins [15, 17], [19, 21], and [21, 23]
+So first, I separated the data into buckets of 2 mpg to see the distribution of data. From the distribution, the highest number of cars (5) were in the bins [15, 17], [19, 21], and [21, 23]. From the histogram, we can also see that there are not that many cars in the dataset, so this dataset is actually quite small.
+
+Let's confirm.
+
+```{r}
+dim(mtcars)
+```
+
+We can see there are 32 rows and 11 columns, the dataset is actually very small, we have to keep this in mind when performing any other analysis.
+
+

@@ -4,7 +4,56 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "kddcup99 analysis\n\n\n\n\n\n\n\n\nSep 21, 2026\n\n\nJared Chuang\n\n\n\n\n\n\n\n\n\n\n\n\nmtcars analysis\n\n\n\n\n\n\n\n\nSep 21, 2026\n\n\nJared Chuang\n\n\n\n\n\n\n\n\n\n\n\n\nMy first weeks in MDS\n\n\n\n\n\n\n\n\nSep 11, 2026\n\n\nJared Chuang\n\n\n\n\n\nNo matching items"
+    "text": "Palmer Penguins Analysis in Python.\n\n\n\n\n\n\n\n\nSep 21, 2026\n\n\nJared Chuang\n\n\n\n\n\n\n\n\n\n\n\n\nmtcars analysis\n\n\n\n\n\n\n\n\nSep 21, 2026\n\n\nJared Chuang\n\n\n\n\n\n\n\n\n\n\n\n\nMy first weeks in MDS\n\n\n\n\n\n\n\n\nSep 11, 2026\n\n\nJared Chuang\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/mtcars/index.html",
+    "href": "posts/mtcars/index.html",
+    "title": "mtcars analysis",
+    "section": "",
+    "text": "MTCars EDA\nData: mtcars dataset, GPL License.\nA good idea when starting out with datasets is to get a good feel for the data, see what our data kind of looks like and what rows and columns are in the data.\n\nhead(mtcars)\n\n                   mpg cyl disp  hp drat    wt  qsec vs am gear carb\nMazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4\nMazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4\nDatsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1\nHornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1\nHornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2\nValiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1\n\n\nNext, I want to take a look at the data distribution.\n\nlibrary(ggplot2)\n\nggplot(mtcars, aes(x = mpg)) +\n  geom_histogram(binwidth = 2, fill = \"steelblue\", color = \"white\") +\n  labs(\n    title = \"Distribution of Car Fuel Efficiency\",\n    x = \"Miles per gallon (mpg)\",\n    y = \"Number of cars\"\n  ) +\n  theme_minimal()\n\n\n\n\nDistribution of Fuel Efficiency of Cars\n\n\n\n\nSo first, I separated the data into buckets of 2 mpg to see the distribution of data. From the distribution, the highest number of cars (5) were in the bins [15, 17], [19, 21], and [21, 23]. From the histogram, we can also see that there are not that many cars in the dataset, so this dataset is actually quite small.\nLet’s confirm.\n\ndim(mtcars)\n\n[1] 32 11\n\n\nWe can see there are 32 rows and 11 columns, the dataset is actually very small, we have to keep this in mind when performing any other analysis."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Hi again, my name is Jared Chuang. I grew up in Vancouver, Canada and was lucky enough to go to UBC for my undergrad. After obtaining my BSc in Mathematics, I was unsure about what to do next, I really wanted to work in Tech, so I obtained a Diploma in Data Science which helped me land my first job working as a Machine Learning Engineer at VisionBox, a small startup in Burnaby. I am now hoping to obtain my Masters of Data Science from UBC!"
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About",
+    "section": "",
+    "text": "Hi again, my name is Jared Chuang. I grew up in Vancouver, Canada and was lucky enough to go to UBC for my undergrad. After obtaining my BSc in Mathematics, I was unsure about what to do next, I really wanted to work in Tech, so I obtained a Diploma in Data Science which helped me land my first job working as a Machine Learning Engineer at VisionBox, a small startup in Burnaby. I am now hoping to obtain my Masters of Data Science from UBC!"
+  },
+  {
+    "objectID": "about.html#why-data-science",
+    "href": "about.html#why-data-science",
+    "title": "About",
+    "section": "Why Data Science",
+    "text": "Why Data Science\nAfter being out of school for so long, I really didn’t want to go back to school for 2 years, but I wanted to get a formal education in Data Science. UBC’s MDS program is an accelerated, fast-paced program which you can complete in 10 months, this really drew me towards this program."
+  },
+  {
+    "objectID": "about.html#outside-of-data",
+    "href": "about.html#outside-of-data",
+    "title": "About",
+    "section": "Outside of Data",
+    "text": "Outside of Data\nAs I’ve gotten older and had the chance to travel to different cities, I’ve come to appreciate just how lucky I am to have grown up in Vancouver. Having mountains, lakes, and nature so close by has made me want to spend more of my free time outdoors. These days, you’ll often find me hiking, snowboarding, or paddleboarding, depending on the season.\nOne of the biggest additions to my life has been pickleball. I started playing in 2025, and what began as a casual hobby quickly became something I genuinely look forward to. I enjoy the competitive side of the sport, but I also love the social aspect and the people I’ve met through it.\nWhen I’m not outside or on the pickleball court, I’ve always had video games as another way to spend my time. I regularly play competitive games like League of Legends and Counter-Strike 2, although I enjoy single-player games as well. I’ve always been drawn to competitive games because I enjoy the challenge of improving, learning from mistakes, and pushing myself to get better."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Jared Chuang",
+    "section": "",
+    "text": "Hi, my name is Jared Chuang. I’ve been living in Vancouver my whole life, after graduating with a BSc in Mathematics and a diploma in Data Science. I have been working as a Machine Learning Engineer for 2 years. I am hoping to improve upon my skills to hopefully become a Data Engineer.\nOutside of professional career, some of my hobbies include hiking, playing video games, and playing pickleball."
+  },
+  {
+    "objectID": "posts/palmerpenguins/index.html",
+    "href": "posts/palmerpenguins/index.html",
+    "title": "Palmer Penguins Analysis in Python.",
+    "section": "",
+    "text": "Data: Palmer Penguins, Palmer Station Antarctica LTER., CC0\n\nPalmer Penguins Analysis\nWhen working with new data its a good idea to get a feel for the data, what do rows and columns look like, what does a data entry look like.\nFirst import the necessary libraries\n\nimport numpy as np\nimport pandas as pd\nimport plotly.express as px\nfrom palmerpenguins import load_penguins\n\nI like to get a feel by running df.head and df.shape\n\n# 1. Load dataset\npenguins = load_penguins()\n\npenguins.head()\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\n0\nAdelie\nTorgersen\n39.1\n18.7\n181.0\n3750.0\nmale\n2007\n\n\n1\nAdelie\nTorgersen\n39.5\n17.4\n186.0\n3800.0\nfemale\n2007\n\n\n2\nAdelie\nTorgersen\n40.3\n18.0\n195.0\n3250.0\nfemale\n2007\n\n\n3\nAdelie\nTorgersen\nNaN\nNaN\nNaN\nNaN\nNaN\n2007\n\n\n4\nAdelie\nTorgersen\n36.7\n19.3\n193.0\n3450.0\nfemale\n2007\n\n\n\n\n\n\n\n\npenguins.shape\n\n(344, 8)\n\n\nThere are 344 rows and 8 columns of data.\nAfter taking a look, I want to again see the distribution of penguins using sex and species.\n\n# 2. Grouped Bar Chart: Species distribution broken down by Sex\nfig_bar = px.histogram(\n    penguins.assign(sex=penguins[\"sex\"].fillna(\"Missing\")),\n    x=\"species\",\n    color=\"sex\",\n    barmode=\"group\",\n    title=\"Palmer Penguins: Distribution of Species by Sex\",\n    labels={\"species\": \"Penguin Species\", \"count\": \"Count\", \"sex\": \"Sex\"},\n    color_discrete_map={\n        \"male\": \"#3366CC\",\n        \"female\": \"#FF6699\",\n        \"Missing\": \"#B6B6B6\",\n    },\n    text_auto=True,\n)\nfig_bar.update_layout(\n    xaxis_title=\"Species\",\n    yaxis_title=\"Number of Penguins\",\n    legend_title_text=\"Sex\",\n    template=\"plotly_white\",\n)\nfig_bar.show()\n\n                            \n                                            \nDistribution of Penguins by Species\n\n\n\n# 3. Donut Charts: Species and Sex Proportions\nfig_species_pie = px.pie(\n    penguins,\n    names=\"species\",\n    title=\"Species Proportion Breakdown\",\n    hole=0.4,\n    color_discrete_sequence=px.colors.qualitative.Set2,\n)\nfig_species_pie.show()\n\n                            \n                                            \nProportion of Penguins by Species\n\n\n\nfig_sex_pie = px.pie(\n    penguins.dropna(subset=[\"sex\"]),\n    names=\"sex\",\n    title=\"Sex Breakdown (Excluding Missing)\",\n    hole=0.4,\n    color_discrete_map={\"male\": \"#3366CC\", \"female\": \"#FF6699\"},\n)\nfig_sex_pie.show()\n\n                            \n                                            \nProportion of Penguins by Sex\n\n\nWe can see that there is a lot less data on the Chinstrap species, either it is less common and thus we have less information, or the way we have gathered data, we have just gathered less on the Chinstrap compared to Adelie and Gentoo. The data represents the male and female penguins evenly which is good."
   },
   {
     "objectID": "posts/first-weeks/index.html",
@@ -12,12 +61,5 @@
     "title": "My first weeks in MDS",
     "section": "",
     "text": "Orientation day on campus.\n\n\nWhat I thought would be a nightmare to adjust to is going surprisingly well. I have met a lot of new people and even made some new friends. Balancing schoolwork, studying, and my social life has not been too bad. I am able to take notes, listen to all the lectures, and complete labs usually on the same day, allowing me to spend the rest of my day reading ahead or going out to do other things I enjoy. Hopefully, I can keep it that way.\nAfter entering the workforce and going back to school, it feels kind of refreshing to be in a cohort of peers who are all going through the same things together. We’re all going to experience ups and downs together throughout these 10 months.\nWhat I am worried about is whether I will still be able to keep up this routine once the course material gets harder."
-  },
-  {
-    "objectID": "posts/mtcars/index.html",
-    "href": "posts/mtcars/index.html",
-    "title": "mtcars analysis",
-    "section": "",
-    "text": "library(ggplot2)\n\nggplot(mtcars, aes(x = mpg)) +\n  geom_histogram(binwidth = 2, fill = \"steelblue\", color = \"white\") +\n  labs(\n    title = \"Distribution of Car Fuel Efficiency\",\n    x = \"Miles per gallon (mpg)\",\n    y = \"Number of cars\"\n  ) +\n  theme_minimal()\n\n\n\n\n\n\n\nFigure 1: Distribution of Fuel Efficiency of Cars\n\n\n\n\n\nData: mtcars dataset, GPL\nSeparated the data into buckets of 2 mpg to see the distribution of data. From the distribution, the highest number of cars (5) were in the bins [15, 17], [19, 21], and [21, 23]"
   }
 ]

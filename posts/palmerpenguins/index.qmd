@@ -1,0 +1,93 @@
+---
+title: "Palmer Penguins Analysis in Python."
+author: "Jared Chuang"
+date: 2026-09-21
+---
+
+Data: [Palmer Penguins](https://allisonhorst.github.io/palmerpenguins/),
+Palmer Station Antarctica LTER., CC0
+
+# Palmer Penguins Analysis
+When working with new data its a good idea to get a feel for the data, what do rows and columns look like, what does a data entry look like. 
+
+First import the necessary libraries
+
+```{python}
+import numpy as np
+import pandas as pd
+import plotly.express as px
+from palmerpenguins import load_penguins
+```
+
+I like to get a feel by running `df.head` and `df.shape`
+```{python}
+# 1. Load dataset
+penguins = load_penguins()
+
+penguins.head()
+```
+
+```{python}
+penguins.shape
+```
+
+There are 344 rows and 8 columns of data.
+
+After taking a look, I want to again see the distribution of penguins using sex and species.
+```{python}
+#| label: species-distribution
+#| fig-cap: "Distribution of Penguins by Species"
+
+
+# 2. Grouped Bar Chart: Species distribution broken down by Sex
+fig_bar = px.histogram(
+    penguins.assign(sex=penguins["sex"].fillna("Missing")),
+    x="species",
+    color="sex",
+    barmode="group",
+    title="Palmer Penguins: Distribution of Species by Sex",
+    labels={"species": "Penguin Species", "count": "Count", "sex": "Sex"},
+    color_discrete_map={
+        "male": "#3366CC",
+        "female": "#FF6699",
+        "Missing": "#B6B6B6",
+    },
+    text_auto=True,
+)
+fig_bar.update_layout(
+    xaxis_title="Species",
+    yaxis_title="Number of Penguins",
+    legend_title_text="Sex",
+    template="plotly_white",
+)
+fig_bar.show()
+```
+
+```{python}
+#| label: species-proportion
+#| fig-cap: "Proportion of Penguins by Species"
+# 3. Donut Charts: Species and Sex Proportions
+fig_species_pie = px.pie(
+    penguins,
+    names="species",
+    title="Species Proportion Breakdown",
+    hole=0.4,
+    color_discrete_sequence=px.colors.qualitative.Set2,
+)
+fig_species_pie.show()
+```
+
+```{python}
+#| label: sex-proportion
+#| fig-cap: "Proportion of Penguins by Sex"
+fig_sex_pie = px.pie(
+    penguins.dropna(subset=["sex"]),
+    names="sex",
+    title="Sex Breakdown (Excluding Missing)",
+    hole=0.4,
+    color_discrete_map={"male": "#3366CC", "female": "#FF6699"},
+)
+fig_sex_pie.show()
+```
+
+We can see that there is a lot less data on the Chinstrap species, either it is less common and thus we have less information, or the way we have gathered data, we have just gathered less on the Chinstrap compared to Adelie and Gentoo. The data represents the male and female penguins evenly which is good.
