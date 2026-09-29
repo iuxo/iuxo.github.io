@@ -13,6 +13,8 @@ When working with new data its a good idea to get a feel for the data, what do r
 First import the necessary libraries
 
 ```{python}
+#| warning: false
+#| message: false
 import numpy as np
 import pandas as pd
 import plotly.express as px
